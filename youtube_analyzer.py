@@ -9,7 +9,7 @@ load_dotenv()
 
 def build_youtube_agent():
     return Agent(
-    name="YouTube Agent",
+    name="NoYap Agent",
     model=Groq(id="qwen/qwen3-32b"),
     tools=[YouTubeTools()],
     instructions=dedent("""\

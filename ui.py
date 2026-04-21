@@ -2,8 +2,8 @@ import streamlit as st
 from youtube_analyzer import build_youtube_agent
 
 st.set_page_config(
-    page_title="YouTube Video Analyzer",
-    page_icon="🎥",
+    page_title="NoYap | YouTube Video Summarizer",
+    page_icon="🤫",
     layout="centered",
 )
 
@@ -42,8 +42,8 @@ h1, h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1><span class='highlight'>AI</span> YouTube Analyzer 🎥</h1>", unsafe_allow_html=True)
-st.caption("Instantly extract insights, summaries, and key takeaways from any YouTube video.")
+st.markdown("<h1><span class='highlight'>NoYap</span> 🤫</h1>", unsafe_allow_html=True)
+st.caption("Skip the 10-minute intro. Get straight to the lore, summaries, and key takeaways.")
 
 st.markdown(
     'Built using <span class="highlight">Agno</span> and <span class="highlight">Groq</span>',
@@ -71,11 +71,11 @@ if analyze_button:
     if not video_url:
         st.warning("⚠️ Please enter a YouTube URL first!")
     else:
-        with st.spinner("AI is working and analyzing the video... This might take a moment."):
+        with st.spinner("AI is cutting the yap... This might take a moment."):
             try:
                 response = agent.run(f"Analyse this video: {video_url}")
                 
-                st.success("Analysis complete!")
+                st.success("Yap successfully cut!")
                 st.subheader("📝 Analysis Report")
                 
                 with st.container(border=True):
