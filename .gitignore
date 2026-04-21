@@ -1,0 +1,8 @@
+.env
+.env.*
+finance.py
+memory.py
+team.py
+
+__pycache__/
+venv/
