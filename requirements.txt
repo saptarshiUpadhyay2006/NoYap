@@ -3,4 +3,5 @@ python-dotenv
 agno
 groq
 openai
+youtube-transcript-api
 # Add any other libraries you used, like youtube-transcript-api if you used it
