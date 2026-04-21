@@ -1,0 +1,5 @@
+streamlit
+python-dotenv
+agno
+groq
+# Add any other libraries you used, like youtube-transcript-api if you used it
